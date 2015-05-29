@@ -3,13 +3,16 @@
 esa API v1 client library, written in Node.js
 
 https://docs.esa.io/posts/109
+
 https://docs.esa.io/posts/102
+
 
 ## Installation
 
 ```
 npm install esa-nodejs
 ```
+
 
 ## Usage
 
