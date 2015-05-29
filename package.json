@@ -17,5 +17,9 @@
     "build": "$(npm bin)/gulp"
   },
   "author": "bells17",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/bells17/esa-nodejs.git"
+  },
   "license": "BSD License"
 }
