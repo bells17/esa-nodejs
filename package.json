@@ -1,6 +1,6 @@
 {
   "name": "esa-nodejs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "dependencies": {
     "superagent": "^1.2.0",
