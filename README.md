@@ -26,7 +26,7 @@ client = esa({
 client.team
 //=> 'teamname'
 
-client.accessToken = 'api access token'
+client.accessToken
 //=> 'api access token'
 
 // GET /v1/teams
