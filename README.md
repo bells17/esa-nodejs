@@ -54,13 +54,13 @@ client.api.createPost({name: 'foo'}, function(err, res) {
 });
 
 // PATCH /v1/teams/:team_name/posts/:number
-client.api.updatePost(1, {name: 'foo update'}, function(err, res) {
+client.api.updatePost(postNumber, {name: 'foo update'}, function(err, res) {
   console.log(err);
   console.log(res.body);
 });
 
 // DELETE /v1/teams/:team_name/posts/:number
-client.api.updatePost(1, function(err, res) {
+client.api.deletePost(postNumber, function(err, res) {
   console.log(err);
   console.log(res.body);
 });
