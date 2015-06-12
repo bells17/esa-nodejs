@@ -23,6 +23,8 @@ gulp.task 'build', ->
     .pipe gulp.dest('lib/')
 
 gulp.task 'test', ->
+  process.env.PWD = __dirname
+
   gulp
     .src([
       'test/*.coffee'
