@@ -7,19 +7,24 @@
     "superagent-no-cache": "^0.1.0"
   },
   "devDependencies": {
-    "gulp": "^3.8.11",
+    "coffee-errors": "^0.8.6",
     "coffee-script": "^1.9.2",
     "coffeeify": "^1.1.0",
-    "gulp-coffee": "^2.3.1"
+    "gulp": "^3.8.11",
+    "gulp-coffee": "^2.3.1",
+    "gulp-mocha": "^2.1.1",
+    "mocha": "^2.2.5",
+    "should": "^6.0.3"
   },
   "main": "./lib/index.js",
   "scripts": {
-    "build": "$(npm bin)/gulp"
+    "build": "$(npm bin)/gulp",
+    "test": "$(npm bin)/gulp test"
   },
   "author": "bells17",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/bells17/esa-nodejs.git"
+    "type": "git",
+    "url": "https://github.com/bells17/esa-nodejs.git"
   },
   "license": "BSD License"
 }
