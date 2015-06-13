@@ -18,9 +18,9 @@
     "sinon": "^1.15.3"
   },
   "main": "./lib/index.js",
-  "start": "npm run build",
-  "scripts": {
-    "build": "$(npm bin)/gulp",
+  "scripts": {  
+    "watch": "$(npm bin)/gulp",
+    "build": "$(npm bin)/gulp build",
     "test": "$(npm bin)/gulp test"
   },
   "author": "bells17",
