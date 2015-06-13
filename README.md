@@ -1,5 +1,7 @@
 # esa-nodejs
 
+[![Build Status](https://travis-ci.org/bells17/esa-nodejs.svg?branch=master)](https://travis-ci.org/bells17/esa-nodejs)
+
 esa API v1 client library, written in Node.js
 
 https://docs.esa.io/posts/109
