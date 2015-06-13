@@ -1,6 +1,6 @@
 # esa-nodejs
 
-[![Build Status](https://travis-ci.org/bells17/esa-nodejs.svg?branch=master)](https://travis-ci.org/bells17/esa-nodejs)
+[![npm version](https://badge.fury.io/js/esa-nodejs.svg)](http://badge.fury.io/js/esa-nodejs) [![Build Status](https://travis-ci.org/bells17/esa-nodejs.svg?branch=master)](https://travis-ci.org/bells17/esa-nodejs)
 
 esa API v1 client library, written in Node.js
 
