@@ -67,4 +67,34 @@ client.api.deletePost(postNumber, function(err, res) {
   console.log(res.body);
 });
 
+// GET /api/v1/teams/:team_name/posts/:post_number/comments
+client.api.comments(postNumber, function(err, res) {
+  console.log(err);
+  console.log(res.body.comments);
+});
+
+// GET /api/v1/teams/:team_name/comments/:comment_id
+client.api.comment(commentId, function(err, res) {
+  console.log(err);
+  return console.log(res.body);
+});
+
+// POST /api/v1/teams/:team_name/posts/:post_number/comments
+client.api.createComment(postNumber, {comment: { body_md: 'api create comment' } }, function(err, res) {
+  console.log(err);
+  return console.log(res.body);
+});
+
+// PATCH /api/v1/teams/:team_name/comments/:comment_id
+client.api.updateComment(commentId, {comment: { body_md: 'api create comment' } }, function(err, res) {
+  console.log(err);
+  return console.log(res.body);
+});
+
+// DELETE /api/v1/teams/:team_name/comments/:comment_id
+client.api.deleteComment(commentId, function(err, res) {
+  console.log(err);
+  return console.log(res.body);
+});
+
 ```

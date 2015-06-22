@@ -58,4 +58,44 @@ module.exports = (client)->
       url = @client.url() + "posts/#{number or ''}"
       @client.del url, params, headers, callback
 
+    ###
+    GET /api/v1/teams/:team_name/posts/:post_number/comments
+    https://docs.esa.io/posts/102#6-1-0
+    ###
+    comments: (number, params, headers, callback)->
+      url = @client.url() + "posts/#{number or ''}/comments"
+      @client.get url, params, headers, callback
+
+    ###
+    GET /api/v1/teams/:team_name/comments/:comment_id
+    https://docs.esa.io/posts/102#6-2-0
+    ###
+    comment: (id, params, headers, callback)->
+      url = @client.url() + "comments/#{id or ''}"
+      @client.get url, params, headers, callback
+
+    ###
+    POST /api/v1/teams/:team_name/posts/:post_number/comments
+    https://docs.esa.io/posts/102#6-3-0
+    ###
+    createComment: (number, params, headers, callback)->
+      url = @client.url() + "posts/#{number or ''}/comments"
+      @client.post url, params, headers, callback
+    
+    ###
+    PATCH /api/v1/teams/:team_name/comments/:comment_id
+    https://docs.esa.io/posts/102#6-4-0
+    ###
+    updateComment: (id, params, headers, callback)->
+      url = @client.url() + "comments/#{id or ''}"
+      @client.patch url, params, headers, callback
+
+    ###
+    DELETE /api/v1/teams/:team_name/comments/:comment_id
+    https://docs.esa.io/posts/102#6-5-0
+    ###
+    deleteComment: (id, params, headers, callback)->
+      url = @client.url() + "comments/#{id or ''}"
+      @client.del url, params, headers, callback
+
   }
