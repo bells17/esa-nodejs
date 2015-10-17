@@ -18,7 +18,7 @@
     "sinon": "^1.15.3"
   },
   "main": "./lib/index.js",
-  "scripts": {  
+  "scripts": {
     "watch": "$(npm bin)/gulp",
     "build": "$(npm bin)/gulp build",
     "test": "$(npm bin)/gulp test"
@@ -28,5 +28,5 @@
     "type": "git",
     "url": "https://github.com/bells17/esa-nodejs.git"
   },
-  "license": "BSD License"
+  "license": "MIT"
 }
