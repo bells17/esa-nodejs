@@ -49,6 +49,12 @@ client.api.stats(function(err, res) {
   console.log(res.body);
 });
 
+// GET /api/v1/teams/:team_name/stats
+client.api.stats(function(err, res) {
+  console.log(err);
+  console.log(res.body);
+});
+
 // GET /v1/teams/:team_name/posts
 client.api.posts(function(err, res) {
   console.log(err);
