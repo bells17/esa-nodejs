@@ -27,6 +27,14 @@ module.exports = (client)->
       @client.get url, params, headers, callback
 
     ###
+    GET /api/v1/teams/:team_name/members
+    https://docs.esa.io/posts/102#6-1-0
+    ###
+    members: (params, headers, callback)->
+      url = @client.url() + 'members'
+      @client.get url, params, headers, callback
+
+    ###
     GET /api/v1/teams/:team_name/posts
     https://docs.esa.io/posts/102#5-1-0 
     ###
